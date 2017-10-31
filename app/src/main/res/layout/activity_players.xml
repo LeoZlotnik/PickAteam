@@ -1,0 +1,647 @@
+
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="#ffffff">
+
+    <Button
+        android:id="@+id/build_teams"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_red_light"
+        android:text="BUILD TEAMS"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+
+    <!-- Row 1 with single column -->
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:text="Name"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="Last name"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="Attack"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="Defence"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p1_fn"
+            android:text="Player 1"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p1_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p1_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p1_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p2_fn"
+            android:text="Player 2"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p2_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p2_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p2_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p3_fn"
+            android:text="Player 3"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p3_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p3_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p3_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p4_fn"
+            android:text="Player 4"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p4_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p4_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p4_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p5_fn"
+            android:text="Player 5"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p5_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p5_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p5_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p6_fn"
+            android:text="Player 6"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p6_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p6_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p6_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p7_fn"
+            android:text="Player 7"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p7_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p7_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p7_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p8_fn"
+            android:text="Player 8"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p8_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p8_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p8_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p9_fn"
+            android:text="Player 9"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p9_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p9_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p9_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p10_fn"
+            android:text="Player 10"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p10_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p10_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p10_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p11_fn"
+            android:text="Player 11"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p11_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p11_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p11_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p12_fn"
+            android:text="Player 12"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p12_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p12_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p12_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p13_fn"
+            android:text="Player 13"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p13_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p13_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p13_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p14_fn"
+            android:text="Player 14"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p14_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p14_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p14_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="20dp"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/p15_fn"
+            android:text="Player 15"
+            android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p15_ln"
+            android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p15_at"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="10dip"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/p15_de"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="10dip"
+            android:gravity="center"/>
+
+    </TableRow>
+
+
+
+</TableLayout>
